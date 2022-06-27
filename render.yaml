@@ -2,7 +2,7 @@ services:
   - name: saleor
     type: web
     env: python
-    repo: https://github.com/crcastle/saleor
+    repo: https://github.com/render-examples/saleor
     buildCommand: ./render-build.sh
     startCommand: ./render-start.sh server
     envVars:
@@ -63,7 +63,7 @@ services:
   - type: worker
     name: saleor-worker
     env: python
-    repo: https://github.com/crcastle/saleor
+    repo: https://github.com/render-examples/saleor
     plan: standard
     buildCommand: ./render-build.sh
     startCommand: ./render-start.sh worker
@@ -87,7 +87,7 @@ services:
     schedule: "0 1 * * *"
     buildCommand: ./render-build.sh
     startCommand: ./render-start.sh cron
-    repo: https://github.com/crcastle/saleor
+    repo: https://github.com/render-examples/saleor
     envVars:
       - key: DATABASE_URL
         fromDatabase:

@@ -116,7 +116,7 @@ lxml==4.9.0; python_version >= "2.7" and python_full_version < "3.0.0" or python
 markdown==3.3.7; python_version >= "3.6"
 markupsafe==2.1.1; python_version >= "3.7"
 maxminddb==2.2.0; python_version >= "3.6"
-mccabe==0.6.1; python_version >= "3.6" and python_full_version >= "3.7.2"
+mccabe==0.7.0; python_version >= "3.6" and python_full_version >= "3.7.2"
 measurement==3.2.0
 micawber==0.5.4
 mock==1.0.1
